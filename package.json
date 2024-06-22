@@ -1,0 +1,31 @@
+{
+  "name": "continuous-top-loading-bar",
+  "author": "nag5000 <al3x.nag@gmail.com>",
+  "version": "0.0.1",
+  "description": "A stupidly simple Continuous Top Loader Bar component",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild index.ts --minify --sourcemap=external --outdir=dist && tsc --declaration --emitDeclarationOnly && npm run docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "typedoc index.ts",
+    "prepublish": "npm run build"
+  },
+  "files": ["dist"],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nag5000/continuous-top-loading-bar.git"
+  },
+  "homepage": "https://github.com/nag5000/continuous-top-loading-bar#readme",
+  "bugs": {
+    "url": "https://github.com/nag5000/continuous-top-loading-bar/issues"
+  },
+  "keywords": ["top loading bar", "youtube loading bar"],
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "typedoc": "^0.26.0",
+    "typescript": "^5.5.2"
+  }
+}
