@@ -21,6 +21,8 @@ npm i continuous-top-loading-bar
 ```
 
 ```js
+import { ContinuousTopLoadingBar } from "continuous-top-loading-bar";
+
 const bar = document.getElementById('progress-bar')
 const loader = new ContinuousTopLoadingBar(bar)
 // loader.start()
@@ -33,4 +35,4 @@ See here https://nag5000.github.io/continuous-top-loading-bar
 
 # Demo
 
-TBD
+[![Edit continuous-top-loading-bar](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/continuous-top-loading-bar-gz7g4l?file=%2Findex.html)
